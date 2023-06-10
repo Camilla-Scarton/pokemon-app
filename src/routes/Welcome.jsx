@@ -1,5 +1,5 @@
 const Welcome = () => {
-    return (<div>Welcome!</div>)
+    return (<div className="home-container">Welcome!</div>)
 }
 
 export default Welcome;

@@ -1,6 +1,8 @@
 const SearchForm = () => {
     return (
-        <form>sono un form</form>
+        <div className="search-form-container">
+            <form>sono un form</form>
+        </div>
     )
 }
 

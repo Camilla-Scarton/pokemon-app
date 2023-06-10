@@ -1,6 +1,6 @@
 const List = () => {
   return (
-    <>List</>
+    <div className="list-container">List</div>
   );
 }
 

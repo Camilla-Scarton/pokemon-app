@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+@import "navbar.css";
+@import "footer.css";
+
+:root {
+  --beige: #ebc866;
+  --blue: #2ab4ef;
+  --light-blue: #9EDEF9; 
+  --red: rgba(228, 54, 77, 0.8);
+  --green: #4dd658f9;
+  --grey: #ccc2c2;
+  --pink: #f09ead;
+  --orange: rgba(255, 169, 10, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+}
+
+#page {
+    min-height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    padding: 30px 50px;
+}
+
+.list-container {
+    background-color: var(--red);
+    width: 100%;
+}
+
+.search-form-container {
+    background-color: var(--orange);
+    width: 100%;
+}
+
+.home-container {
+    background-color: var(--beige);
+}

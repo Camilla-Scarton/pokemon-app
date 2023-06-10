@@ -11,6 +11,8 @@ import Welcome from './routes/Welcome';
 import List from './routes/List';
 import SearchForm from './routes/SearchForm';
 
+import "./style/index.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
