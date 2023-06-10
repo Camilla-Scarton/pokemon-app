@@ -40,25 +40,34 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <a href="https://pokeapi.co/">
+        <div className="links">
+          <a href="https://pokeapi.co/">
           <img
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/badges/25.png"
-            alt="api"
+            alt="badge"
           />
           <span>API</span>
         </a>
-        <div className="personal-links">
+        <a href="https://tenor.com/it/">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/badges/31.png"
+            alt="badge"
+          />
+          <span>GIF</span>
+        </a>
+        </div>
+        <div className="links">
           <a href="https://github.com/Camilla-Scarton">
             <img
               src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/badges/26.png"
-              alt="api"
+              alt="badge"
             />
             <span>GitHub</span>
           </a>
           <a href="https://www.linkedin.com/in/camilla-scarton/">
             <img
               src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/badges/27.png"
-              alt="api"
+              alt="badge"
             />
             <span>LinkedIn</span>
           </a>
