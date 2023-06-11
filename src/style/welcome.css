@@ -91,3 +91,7 @@
     align-items: flex-start;
     gap: 15px;
 }
+
+#guide {
+    scroll-margin-top: 120px;
+}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const useFetchPokemonOnScroll = () => {
@@ -6,11 +6,13 @@ const useFetchPokemonOnScroll = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const [pageNumber, setPageNumber] = useState(0);
+  let pageNumber = -1;
 
   async function fetchPokemon() {
+    setError(false);
     setIsLoading(true);
     try {
+      pageNumber++;
       const response = await axios.get(
         `https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pageNumber * 20}`
       );
@@ -19,13 +21,11 @@ const useFetchPokemonOnScroll = () => {
 
       setPokemonData((prevData) => [...prevData, ...details]);
 
-      setIsLoading(false);
     } catch (err) {
       setError(err.message);
+    } finally {
       setIsLoading(false);
     }
-
-    return pokemonData;
   }
 
   function fetchPokemonDetails(urls) {
@@ -42,10 +42,7 @@ const useFetchPokemonOnScroll = () => {
     let isEndPage =
       window.innerHeight + window.scrollY >=
       document.documentElement.offsetHeight;
-    if (isEndPage) {
-        setPageNumber((prevNumber) => prevNumber + 1);
-        fetchPokemon();
-    }
+    if (isEndPage) fetchPokemon();
   }
 
   return { fetchPokemon, handleScroll, pokemonData, isLoading, error };

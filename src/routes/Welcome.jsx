@@ -27,7 +27,7 @@ const Welcome = () => {
         <div className="card-text">
           <h3>Pokémon list</h3>
           <p>
-            In the <strong>List section</strong>, you can see the first 15
+            In the <strong>List section</strong>, you can see the first 20
             pokémon loaded from the PokéAPI. <br /> The order is based on the
             stage they appear in the game. <br /> If you want to see more
             Pokémon, scroll down!
@@ -39,7 +39,7 @@ const Welcome = () => {
         <div className="gif-container">
           <img
             src="https://tenor.com/it/view/ash-may-max-brock-pokémon-ag-pokemon-ash-may-pokémon-pokemon-max-gif-21959516.gif"
-            alt="immagine che fa apparire cose"
+            alt="interest-git"
           />
         </div>
       </div>
@@ -57,7 +57,7 @@ const Welcome = () => {
         <div className="gif-container">
           <img
             src="https://tenor.com/it/view/pokemon-gif-21699432.gif"
-            alt="immagine che dia l'idea di compilare e trovare cose"
+            alt="surprise-gif"
           />
         </div>
       </div>

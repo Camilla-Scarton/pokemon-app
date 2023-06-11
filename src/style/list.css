@@ -1,0 +1,41 @@
+.list-container h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid var(--red);
+    margin: 0px 130px 35px 130px;
+}
+
+.list-container .list {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.list-container .card {
+    text-align: center;
+    padding: 20px 30px;
+    border: 5px solid var(--red);
+}
+
+.list-container span {
+    padding: 0 4px;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.list-container h3 {
+    font-size: 30px;
+    padding: 8px 0;
+    border-bottom: 3px solid white;
+    background: linear-gradient(to left, transparent, var(--red) 20% 80%, transparent); 
+}
+
+.list .text {
+    font-size: 20px;
+    background-color: white;
+    padding: 7px;
+}

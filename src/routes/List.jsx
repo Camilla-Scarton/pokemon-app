@@ -1,29 +1,29 @@
 import { useEffect } from "react";
 import useFetchPokemonOnScroll from "../hooks/useFetchPokemonOnScroll";
-
-const CardList = (pokemon) => {
-  const { name } = pokemon;
-}
+import Card from "../components/PokemonCard";
 
 const List = () => {
-  const { fetchPokemon, handleScroll, pokemonData, isLoading, error } = useFetchPokemonOnScroll();
-  
+  const { fetchPokemon, handleScroll, pokemonData, isLoading, error } =
+    useFetchPokemonOnScroll();
+
   useEffect(() => {
     fetchPokemon();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
+  }, []);
 
-  console.log(pokemonData)
   return (
     <div className="list-container">
-      
-      {pokemonData.map((poke,i) => <div key={i}>{poke.name}</div> )} 
-      {pokemonData && <div>ho i dati</div>}
-      {isLoading && <div>caricamento</div>}
-      {error && <div>error</div>}
+      <h2>Pokémon list</h2>
+      {isLoading && <h2>Loading...</h2>}
+      {error && <h2>Error!</h2>}
+      <div className="list">
+        {pokemonData.length !== 0 &&
+          pokemonData.map((el, i) => <Card key={i} pokemon={el} />)}
+      </div>
     </div>
   );
-}
+};
 
 export default List;
+
