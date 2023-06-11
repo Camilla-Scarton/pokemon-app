@@ -28,7 +28,7 @@ const Welcome = () => {
           <h3>Pokémon list</h3>
           <p>
             In the <strong>List section</strong>, you can see the first 20
-            pokémon loaded from the PokéAPI. <br /> The order is based on the
+            pokémon loaded from the PokéAPI. The order is based on the
             stage they appear in the game. <br /> If you want to see more
             Pokémon, scroll down!
           </p>

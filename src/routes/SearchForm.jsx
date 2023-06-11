@@ -31,7 +31,7 @@ const SearchForm = () => {
           <input
             id="info"
             name="info"
-            placeholder="1, 2 or picachu..."
+            placeholder="1, 2 or pikachu..."
             value={form.info}
             type="text"
             onChange={handleChange}
