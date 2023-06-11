@@ -5,6 +5,7 @@
 @import "welcome.css";
 @import "list.css";
 @import "form.css";
+@import "errorPage.css";
 
 :root {
   --beige: #ebc866;
