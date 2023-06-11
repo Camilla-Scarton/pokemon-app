@@ -15,7 +15,7 @@ import "./style/index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/pokemon-app/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
